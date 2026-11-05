@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pegadinha</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#080808;color:#ff3030;font-family:Arial,sans-serif;text-align:center;overflow:hidden}
+.panel{padding:28px;max-width:760px}h1{font-size:clamp(2.5rem,9vw,6rem);margin:0 0 18px;text-shadow:0 0 18px #f00}
+p{font-size:clamp(1.1rem,3vw,1.8rem);color:#f2f2f2}.warning{letter-spacing:.18em;font-weight:bold}
+button{margin-top:22px;border:0;border-radius:10px;padding:14px 24px;background:#ff3030;color:white;font-size:1.1rem;font-weight:bold;cursor:pointer}
+#reveal{display:none;color:#70ff90;font-size:1.8rem;font-weight:bold;margin-top:20px}
+.scan{position:fixed;inset:0;pointer-events:none;opacity:.10;background:repeating-linear-gradient(transparent 0 3px,#fff 4px)}
+</style>
+</head>
+<body><div class="scan"></div><main class="panel">
+<div class="warning">⚠ ALERTA ⚠</div>
+<h1>VOCÊ FOI<br>HACKEADO!</h1>
+<p>Seu dispositivo foi “invadido”... 😈</p>
+<p>Calma! Não aconteceu nada. É só uma brincadeira.</p>
+<button onclick="document.getElementById('reveal').style.display='block';this.style.display='none'">Revelar a brincadeira</button>
+<div id="reveal">😂 PEGADINHA! Você está seguro.</div>
+</main></body></html>
